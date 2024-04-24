@@ -1,0 +1,21 @@
+Code for $onJoined[$getServerVar[welcome]]:
+
+=============================================
+
+$nomention
+$var[text1;Welcome!]
+$var[text2;We are now $membersCount members!]
+$description[Welcome to $serverName[$guildID], <@$authorID>!]
+$image[https://api.miduwu.ga/image/welcomecard?title=$url[encode;$var[text1]]&image=$userAvatar[$authorID]&username=$username[$authorID]&discriminator=$discriminator[$authorID]&subtitle=$url[encode;$var[text2]]]
+
+=============================================
+
+Code for $onLeave[$getServerVar[leave]]:
+
+=============================================
+
+$nomention
+$var[text1;Goodbye!]
+$var[text2;We are now $membersCount members!]
+$description[<@$authorID> left the server!]
+$image[https://api.miduwu.ga/image/welcomecard?title=$url[encode;$var[text1]]&image=$userAvatar[$authorID]&username=$username[$authorID]&discriminator=$discriminator[$authorID]&subtitle=$url[encode;$var[text2]]]
